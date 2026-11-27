@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SahilTech Studio | Websites, Software, Graphic Design & Print</title>
+  <meta name="description" content="Custom Websites, Billing/Inventory Software, Flex Banner, Pamphlet, Visiting Card, Shadi Card, Resume & Canva Design Studio in Chirkunda, Dhanbad." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .font-serif-display { font-family: 'Playfair Display', serif; }
+
+    /* Brand Logo Hover Glow Effect */
+    .brand-logo {
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .brand-logo:hover {
+      transform: translateY(-1px) scale(1.03);
+      filter: drop-shadow(0 0 12px rgba(79, 70, 229, 0.75)) drop-shadow(0 0 24px rgba(16, 185, 129, 0.45));
+    }
+    .brand-logo:hover .brand-badge {
+      background: linear-gradient(135deg, #4f46e5, #10b981);
+      box-shadow: 0 0 16px rgba(79, 70, 229, 0.9);
+    }
+    .brand-logo:hover .brand-studio-text {
+      color: #10b981;
+      text-shadow: 0 0 12px rgba(16, 185, 129, 0.65);
+    }
+
+    /* Custom Tech Cursor (Desktop Only) */
+    @media (hover: hover) and (pointer: fine) {
+      body, a, button, input, textarea, select, .work-card {
+        cursor: none !important;
+      }
+      .cursor-dot {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        background-color: #4f46e5;
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9999;
+        transform: translate(-50%, -50%);
+        transition: transform 0.1s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+      }
+      .cursor-ring {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 36px;
+        height: 36px;
+        border: 2px solid rgba(79, 70, 229, 0.55);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9998;
+        transform: translate(-50%, -50%);
+        transition: width 0.25s ease, height 0.25s ease, border-color 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+      }
+      .cursor-ring.cursor-hover {
+        width: 56px;
+        height: 56px;
+        border-color: #10b981;
+        background-color: rgba(16, 185, 129, 0.14);
+        box-shadow: 0 0 18px rgba(16, 185, 129, 0.5);
+      }
+      .cursor-dot.cursor-hover {
+        background-color: #10b981;
+        box-shadow: 0 0 10px #10b981;
+        transform: translate(-50%, -50%) scale(1.3);
+      }
+    }
+
+    /* Modal Fade-in Animation */
+    @keyframes modalPop {
+      from { opacity: 0; transform: scale(0.95) translateY(10px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+    .animate-modal {
+      animation: modalPop 0.22s ease-out forwards;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+  <!-- Custom Cursor Elements -->
+  <div id="cursorDot" class="cursor-dot hidden md:block"></div>
+  <div id="cursorRing" class="cursor-ring hidden md:block"></div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="#" class="brand-logo flex items-center gap-2.5 font-extrabold text-xl tracking-tight text-slate-900 px-2 py-1 rounded-lg">
+        <span class="brand-badge bg-indigo-600 text-white px-2.5 py-1 rounded-md text-sm font-mono transition-all duration-300">&lt;/&gt;</span>
+        <span>SahilTech<span class="brand-studio-text text-indigo-600 transition-colors duration-300">Studio</span></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+        <a href="#services" class="hover:text-indigo-600 transition">Web & Software</a>
+        <a href="#design-work" class="hover:text-indigo-600 transition font-semibold text-slate-900">Design & Print Work</a>
+        <a href="#portfolio" class="hover:text-indigo-600 transition">Systems</a>
+        <a href="#pricing" class="hover:text-indigo-600 transition">Pricing</a>
+        <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+      </nav>
+      <a href="https://wa.me/918409884046?text=Hi%20Sahil%2C%20mujhe%20Website%2C%20Software%20ya%20Design%20work%20ke%20liye%20baat%20karni%20hai." target="_blank"
+         class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold px-4 py-2 rounded-lg shadow-sm transition">
+        WhatsApp Now
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-white border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-24 grid md:grid-cols-12 gap-10 items-center">
+      <div class="md:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 bg-indigo-50 text-indigo-700 border border-indigo-100 px-3 py-1 rounded-full text-xs font-semibold">
+          <span>●</span> Digital Tech + Creative Print & Branding Studio
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
+          Websites, Software & <span class="text-indigo-600">Complete Graphic Design</span> Under One Roof
+        </h1>
+        <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
+          Shops, Restaurants aur Businesses ke liye custom websites & billing software — saath hi high-impact <strong>Flex Banners, Pamphlets, Visiting Cards, Shadi Cards, Resumes, Logos</strong> aur <strong>Canva Designs</strong>.
+        </p>
+        <div class="flex flex-wrap gap-3 pt-2">
+          <a href="#design-work" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg shadow transition">
+            View Design Samples ↓
+          </a>
+          <a href="https://wa.me/918409884046?text=Hi%20Sahil%2C%20mujhe%20apne%20kaam%20ke%20liye%20quotation%20chahiye." target="_blank"
+             class="bg-slate-900 hover:bg-slate-800 text-white font-semibold px-6 py-3 rounded-lg transition">
+            Direct WhatsApp Order →
+          </a>
+        </div>
+        <div class="pt-3 flex flex-wrap gap-2 text-xs font-medium text-slate-500">
+          <span class="bg-slate-100 px-2.5 py-1 rounded">Web & SQL Software</span>
+          <span class="bg-indigo-50 text-indigo-700 px-2.5 py-1 rounded font-semibold">Canva Pro Branding</span>
+          <span class="bg-rose-50 text-rose-700 px-2.5 py-1 rounded font-semibold">Flex & Pamphlet</span>
+          <span class="bg-purple-50 text-purple-700 px-2.5 py-1 rounded font-semibold">Shadi & Video Cards</span>
+          <span class="bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded font-semibold">Resume & Visiting Card</span>
+        </div>
+      </div>
+
+      <!-- Highlight Card with Custom Image -->
+      <div class="md:col-span-5">
+        <div class="bg-slate-900 text-white rounded-2xl overflow-hidden shadow-xl border border-slate-800">
+          <div class="relative h-44 w-full overflow-hidden">
+            <img
+              src="https://cdn.pixabay.com/photo/2025/09/09/08/52/design-9824072_1280.jpg"
+              alt="Web Design, Software and Graphic Studio"
+              class="w-full h-full object-cover object-center"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/30 to-transparent"></div>
+            <div class="absolute top-3 left-4 right-4 flex items-center justify-between">
+              <span class="bg-slate-950/80 backdrop-blur text-amber-400 text-xs uppercase tracking-wider font-bold px-2.5 py-1 rounded-full">All-In-One Studio</span>
+              <span class="bg-emerald-500/90 text-white text-xs px-2.5 py-1 rounded-full font-semibold">Same-Day Design</span>
+            </div>
+          </div>
+
+          <div class="p-6 sm:p-8 pt-4 space-y-5">
+            <div class="flex items-end justify-between border-b border-slate-800 pb-4">
+              <div>
+                <p class="text-slate-400 text-xs uppercase">Websites & Software</p>
+                <p class="text-3xl font-extrabold text-white mt-0.5">₹4,999<span class="text-xs font-normal text-slate-400">/- se</span></p>
+              </div>
+              <div class="text-right">
+                <p class="text-slate-400 text-xs uppercase">Print & Canva Designs</p>
+                <p class="text-3xl font-extrabold text-amber-400 mt-0.5">₹149<span class="text-xs font-normal text-slate-400">/- se</span></p>
+              </div>
+            </div>
+            <ul class="space-y-2.5 text-sm text-slate-300">
+              <li>✔ Business Websites, E-Commerce & Billing Apps</li>
+              <li>✔ Flex Banner, Shop Board, Standee & Hoarding</li>
+              <li>✔ Pamphlet, Flyer, Visiting Card & Bill Book</li>
+              <li>✔ Digital & Print Shadi Card + Video Invitation</li>
+              <li>✔ ATS Resume, Marriage Biodata, Logo & Thumbnails</li>
+            </ul>
+            <a href="#contact" class="block text-center bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold py-3 rounded-lg transition">
+              Book Your Project / Design →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Metrics Strip -->
+  <section class="bg-slate-900 text-white py-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div>
+        <p class="text-2xl sm:text-3xl font-extrabold text-indigo-400">15+</p>
+        <p class="text-xs sm:text-sm text-slate-300 mt-1">Tech & Print Services</p>
+      </div>
+      <div>
+        <p class="text-2xl sm:text-3xl font-extrabold text-emerald-400">Same Day</p>
+        <p class="text-xs sm:text-sm text-slate-300 mt-1">Resume, Card & Poster Delivery</p>
+      </div>
+      <div>
+        <p class="text-2xl sm:text-3xl font-extrabold text-amber-400">HD Print</p>
+        <p class="text-xs sm:text-sm text-slate-300 mt-1">CMYK Ready PDF & CDR/PNG Files</p>
+      </div>
+      <div>
+        <p class="text-2xl sm:text-3xl font-extrabold text-sky-400">100%</p>
+        <p class="text-xs sm:text-sm text-slate-300 mt-1">Custom Layout & Fast Revisions</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 1: Web & Software Engineering -->
+  <section id="services" class="max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-20">
+    <div class="max-w-2xl mb-12">
+      <p class="text-indigo-600 font-bold text-xs uppercase tracking-wider">Part 01 • Software & Web Engineering</p>
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-1">Websites, E-Commerce & Custom Business Software</h2>
+      <p class="text-slate-600 mt-2 text-sm sm:text-base">Apne business ko digital aur automated banane ke liye fast websites aur custom database systems.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+        <div class="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-lg flex items-center justify-center font-bold mb-4">01</div>
+        <h3 class="font-bold text-lg text-slate-900">Shop & Business Websites</h3>
+        <p class="text-sm text-slate-600 mt-2 leading-relaxed">Showrooms, clinics, coaching centers, salons aur local services ke liye clean, mobile-friendly websites.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+        <div class="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-lg flex items-center justify-center font-bold mb-4">02</div>
+        <h3 class="font-bold text-lg text-slate-900">Restaurant & E-Commerce</h3>
+        <p class="text-sm text-slate-600 mt-2 leading-relaxed">Digital QR menu, product catalog, aur direct WhatsApp ordering system bina kisi commission ke.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+        <div class="w-10 h-10 bg-amber-50 text-amber-600 rounded-lg flex items-center justify-center font-bold mb-4">03</div>
+        <h3 class="font-bold text-lg text-slate-900">Custom Billing & SQL Software</h3>
+        <p class="text-sm text-slate-600 mt-2 leading-relaxed">Python, Java, C, aur SQL/DBMS par bana custom billing, stock inventory, aur khata management software.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+        <div class="w-10 h-10 bg-sky-50 text-sky-600 rounded-lg flex items-center justify-center font-bold mb-4">04</div>
+        <h3 class="font-bold text-lg text-slate-900">Google Maps & SEO Setup</h3>
+        <p class="text-sm text-slate-600 mt-2 leading-relaxed">Aapki dukaan ya office ko Google Maps aur local search mein top par dikhane ke liye complete setup.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: SEPARATE CREATIVE DESIGN & PRINT STUDIO WORK (CLICKABLE SAMPLES) -->
+  <section id="design-work" class="bg-slate-900 text-white py-16 md:py-24 border-y border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <!-- Header & Filter Buttons -->
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
+        <div class="max-w-2xl">
+          <span class="inline-block bg-amber-400/15 text-amber-300 border border-amber-400/30 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">
+            Part 02 • Click Any Card To View Sample
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-3">
+            Flex Banner, Pamphlet, Shadi Card, Resume & Canva Work
+          </h2>
+          <p class="text-slate-300 mt-2 text-sm sm:text-base">
+            Kisi bhi card par click karke uska <strong>Live Design Sample & Layout Preview</strong> dekhein aur seedha WhatsApp par order karein.
+          </p>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="flex flex-wrap gap-2" id="workFilters">
+          <button type="button" data-filter="all" class="filter-btn bg-indigo-600 text-white text-xs font-semibold px-4 py-2 rounded-full transition">
+            All Work (12)
+          </button>
+          <button type="button" data-filter="print" class="filter-btn bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold px-4 py-2 rounded-full transition">
+            Shop & Print
+          </button>
+          <button type="button" data-filter="events" class="filter-btn bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold px-4 py-2 rounded-full transition">
+            Shadi & Events
+          </button>
+          <button type="button" data-filter="digital" class="filter-btn bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold px-4 py-2 rounded-full transition">
+            Canva & Social
+          </button>
+          <button type="button" data-filter="docs" class="filter-btn bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold px-4 py-2 rounded-full transition">
+            Resume & Office
+          </button>
+        </div>
+      </div>
+
+      <!-- 12 Clickable Design & Print Work Cards Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="workGrid">
+
+        <!-- 1. Flex Banner & Hoarding -->
+        <div data-category="print" data-sample="flex" class="work-card group bg-slate-800/80 border border-slate-700/80 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 hover:-translate-y-1 transition-all duration-300">
+          <div>
+            <div class="relative h-36 w-full overflow-hidden bg-slate-950">
+              <img src="https://images.unsplash.com/photo-1606388062057-68d065c89d65?auto=format&fit=crop&w=800&q=80" alt="Flex Banner Sample" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+              <span class="absolute top-3 left-3 text-[11px] font-bold uppercase tracking-wider bg-rose-600/90 text-white px-2.5 py-1 rounded">Print & Outdoor</span>
+              <span class="absolute bottom-2.5 right-3 text-xs font-semibold bg-slate-950/85 text-amber-300 px-2.5 py-1 rounded-md border border-amber-400/30">👁️ View Sample</span>
+            </div>
+            <div class="p-6 pb-3">
+              <h3 class="text-lg font-bold text-white group-hover:text-amber-300 transition">Flex Banner, Hoarding & Glow Sign</h3>
+              <p class="text-sm text-slate-300 mt-2 leading-relaxed">
+                Dukaan ke front board, showroom opening, coaching institute, hospital, aur event stage ke liye sharp HD flex designs.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-1.5 text-[11px] text-slate-400">
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Custom Size (ft)</span>
+                <span class="bg-slate-900 px-2 py-0.5 rounded">300 DPI Print PDF</span>
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Standee</span>
+              </div>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-3">
+            <div class="pt-3 border-t border-slate-700 flex items-center justify-between">
+              <span class="text-sm font-bold text-amber-400">From ₹399/-</span>
+              <span class="text-xs font-semibold text-white group-hover:text-amber-300">Click for Preview →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Pamphlet, Handbill & Flyer -->
+        <div data-category="print" data-sample="pamphlet" class="work-card group bg-slate-800/80 border border-slate-700/80 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 hover:-translate-y-1 transition-all duration-300">
+          <div>
+            <div class="relative h-36 w-full overflow-hidden bg-slate-950">
+              <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=800&q=80" alt="Pamphlet Brochure Sample" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+              <span class="absolute top-3 left-3 text-[11px] font-bold uppercase tracking-wider bg-rose-600/90 text-white px-2.5 py-1 rounded">Marketing Print</span>
+              <span class="absolute bottom-2.5 right-3 text-xs font-semibold bg-slate-950/85 text-amber-300 px-2.5 py-1 rounded-md border border-amber-400/30">👁️ View Sample</span>
+            </div>
+            <div class="p-6 pb-3">
+              <h3 class="text-lg font-bold text-white group-hover:text-amber-300 transition">Pamphlet, Handbill & Brochure</h3>
+              <p class="text-sm text-slate-300 mt-2 leading-relaxed">
+                Newspaper insert handbills, A4/A5 single & double-side pamphlets, tri-fold brochures aur sale offer flyers.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-1.5 text-[11px] text-slate-400">
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Hindi + English</span>
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Single/Double Side</span>
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Tri-Fold</span>
+              </div>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-3">
+            <div class="pt-3 border-t border-slate-700 flex items-center justify-between">
+              <span class="text-sm font-bold text-amber-400">From ₹299/-</span>
+              <span class="text-xs font-semibold text-white group-hover:text-amber-300">Click for Preview →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Shadi Ka Card (Print + Digital) -->
+        <div data-category="events" data-sample="shadi" class="work-card group bg-slate-800/80 border border-slate-700/80 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 hover:-translate-y-1 transition-all duration-300">
+          <div>
+            <div class="relative h-36 w-full overflow-hidden bg-slate-950">
+              <img src="https://images.unsplash.com/photo-1512090967618-c9d67f852cec?auto=format&fit=crop&w=800&q=80" alt="Shadi Card Sample" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+              <span class="absolute top-3 left-3 text-[11px] font-bold uppercase tracking-wider bg-purple-600/90 text-white px-2.5 py-1 rounded">Wedding & Events</span>
+              <span class="absolute bottom-2.5 right-3 text-xs font-semibold bg-slate-950/85 text-amber-300 px-2.5 py-1 rounded-md border border-amber-400/30">👁️ View Sample</span>
+            </div>
+            <div class="p-6 pb-3">
+              <h3 class="text-lg font-bold text-white group-hover:text-amber-300 transition">Shadi Ka Card (Digital PDF & Print)</h3>
+              <p class="text-sm text-slate-300 mt-2 leading-relaxed">
+                Royal traditional & modern WhatsApp wedding cards, Tilak, Haldi, Mehndi, Reception aur printing press card layouts.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-1.5 text-[11px] text-slate-400">
+                <span class="bg-slate-900 px-2 py-0.5 rounded">WhatsApp PDF</span>
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Location QR</span>
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Hindi / English</span>
+              </div>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-3">
+            <div class="pt-3 border-t border-slate-700 flex items-center justify-between">
+              <span class="text-sm font-bold text-amber-400">From ₹249/-</span>
+              <span class="text-xs font-semibold text-white group-hover:text-amber-300">Click for Preview →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Video Invitation -->
+        <div data-category="events" data-sample="video" class="work-card group bg-slate-800/80 border border-slate-700/80 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 hover:-translate-y-1 transition-all duration-300">
+          <div>
+            <div class="relative h-36 w-full overflow-hidden bg-slate-950">
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Video Invitation Sample" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+              <span class="absolute top-3 left-3 text-[11px] font-bold uppercase tracking-wider bg-purple-600/90 text-white px-2.5 py-1 rounded">Animated Invite</span>
+              <span class="absolute bottom-2.5 right-3 text-xs font-semibold bg-slate-950/85 text-amber-300 px-2.5 py-1 rounded-md border border-amber-400/30">👁️ View Sample</span>
+            </div>
+            <div class="p-6 pb-3">
+              <h3 class="text-lg font-bold text-white group-hover:text-amber-300 transition">Video Invitation (Shadi, Birthday, Anniversary)</h3>
+              <p class="text-sm text-slate-300 mt-2 leading-relaxed">
+                Background music, couple/family photos aur smooth animation ke saath WhatsApp par share karne ke liye HD MP4 video card.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-1.5 text-[11px] text-slate-400">
+                <span class="bg-slate-900 px-2 py-0.5 rounded">1080p Full HD</span>
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Custom Music</span>
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Mundan / Griha Pravesh</span>
+              </div>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-3">
+            <div class="pt-3 border-t border-slate-700 flex items-center justify-between">
+              <span class="text-sm font-bold text-amber-400">From ₹499/-</span>
+              <span class="text-xs font-semibold text-white group-hover:text-amber-300">Click for Preview →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Professional Resume / CV & Marriage Biodata -->
+        <div data-category="docs" data-sample="resume" class="work-card group bg-slate-800/80 border border-slate-700/80 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 hover:-translate-y-1 transition-all duration-300">
+          <div>
+            <div class="relative h-36 w-full overflow-hidden bg-slate-950">
+              <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=800&q=80" alt="Resume CV Sample" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+              <span class="absolute top-3 left-3 text-[11px] font-bold uppercase tracking-wider bg-sky-600/90 text-white px-2.5 py-1 rounded">Career & Personal</span>
+              <span class="absolute bottom-2.5 right-3 text-xs font-semibold bg-slate-950/85 text-amber-300 px-2.5 py-1 rounded-md border border-amber-400/30">👁️ View Sample</span>
+            </div>
+            <div class="p-6 pb-3">
+              <h3 class="text-lg font-bold text-white group-hover:text-amber-300 transition">ATS Job Resume / CV & Marriage Biodata</h3>
+              <p class="text-sm text-slate-300 mt-2 leading-relaxed">
+                Freshers aur experienced candidates ke liye clean ATS-friendly Resume/CV, aur traditional decorative Marriage Biodata PDF.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-1.5 text-[11px] text-slate-400">
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Same-Day Delivery</span>
+                <span class="bg-slate-900 px-2 py-0.5 rounded">HD PDF</span>
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Free Minor Edits</span>
+              </div>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-3">
+            <div class="pt-3 border-t border-slate-700 flex items-center justify-between">
+              <span class="text-sm font-bold text-amber-400">From ₹149/-</span>
+              <span class="text-xs font-semibold text-white group-hover:text-amber-300">Click for Preview →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Visiting Card, Letterhead & Bill Book -->
+        <div data-category="print docs" data-sample="visiting" class="work-card group bg-slate-800/80 border border-slate-700/80 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 hover:-translate-y-1 transition-all duration-300">
+          <div>
+            <div class="relative h-36 w-full overflow-hidden bg-slate-950">
+              <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=800&q=80" alt="Visiting Card Sample" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+              <span class="absolute top-3 left-3 text-[11px] font-bold uppercase tracking-wider bg-emerald-600/90 text-white px-2.5 py-1 rounded">Business Stationery</span>
+              <span class="absolute bottom-2.5 right-3 text-xs font-semibold bg-slate-950/85 text-amber-300 px-2.5 py-1 rounded-md border border-amber-400/30">👁️ View Sample</span>
+            </div>
+            <div class="p-6 pb-3">
+              <h3 class="text-lg font-bold text-white group-hover:text-amber-300 transition">Visiting Card, Bill Book & Letterhead</h3>
+              <p class="text-sm text-slate-300 mt-2 leading-relaxed">
+                Front-back VIP business visiting cards (QR code ke saath), GST invoice bill book format, aur company letterhead design.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-1.5 text-[11px] text-slate-400">
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Front + Back</span>
+                <span class="bg-slate-900 px-2 py-0.5 rounded">WhatsApp/Map QR</span>
+                <span class="bg-slate-900 px-2 py-0.5 rounded">GST Bill Format</span>
+              </div>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-3">
+            <div class="pt-3 border-t border-slate-700 flex items-center justify-between">
+              <span class="text-sm font-bold text-amber-400">From ₹199/-</span>
+              <span class="text-xs font-semibold text-white group-hover:text-amber-300">Click for Preview →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Logo Design & Brand Identity -->
+        <div data-category="digital print" data-sample="logo" class="work-card group bg-slate-800/80 border border-slate-700/80 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 hover:-translate-y-1 transition-all duration-300">
+          <div>
+            <div class="relative h-36 w-full overflow-hidden bg-slate-950">
+              <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80" alt="Logo Design Sample" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+              <span class="absolute top-3 left-3 text-[11px] font-bold uppercase tracking-wider bg-indigo-600/90 text-white px-2.5 py-1 rounded">Brand Identity</span>
+              <span class="absolute bottom-2.5 right-3 text-xs font-semibold bg-slate-950/85 text-amber-300 px-2.5 py-1 rounded-md border border-amber-400/30">👁️ View Sample</span>
+            </div>
+            <div class="p-6 pb-3">
+              <h3 class="text-lg font-bold text-white group-hover:text-amber-300 transition">Custom Logo Design & Brand Kit</h3>
+              <p class="text-sm text-slate-300 mt-2 leading-relaxed">
+                Dukaan, startup, YouTube channel ya company ke liye unique logo — transparent PNG, dark/light version aur watermark ke saath.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-1.5 text-[11px] text-slate-400">
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Transparent PNG</span>
+                <span class="bg-slate-900 px-2 py-0.5 rounded">3D Mockup</span>
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Color Palette</span>
+              </div>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-3">
+            <div class="pt-3 border-t border-slate-700 flex items-center justify-between">
+              <span class="text-sm font-bold text-amber-400">From ₹399/-</span>
+              <span class="text-xs font-semibold text-white group-hover:text-amber-300">Click for Preview →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Canva Social Media Posts & Festival Posters -->
+        <div data-category="digital" data-sample="social" class="work-card group bg-slate-800/80 border border-slate-700/80 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 hover:-translate-y-1 transition-all duration-300">
+          <div>
+            <div class="relative h-36 w-full overflow-hidden bg-slate-950">
+              <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80" alt="Social Media Poster Sample" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+              <span class="absolute top-3 left-3 text-[11px] font-bold uppercase tracking-wider bg-indigo-600/90 text-white px-2.5 py-1 rounded">Canva Pro</span>
+              <span class="absolute bottom-2.5 right-3 text-xs font-semibold bg-slate-950/85 text-amber-300 px-2.5 py-1 rounded-md border border-amber-400/30">👁️ View Sample</span>
+            </div>
+            <div class="p-6 pb-3">
+              <h3 class="text-lg font-bold text-white group-hover:text-amber-300 transition">Social Media Posts & Festival Posters</h3>
+              <p class="text-sm text-slate-300 mt-2 leading-relaxed">
+                Instagram, Facebook aur WhatsApp Status ke liye daily promotional posters, festive greetings (Diwali, Holi, Eid, Chhath) aapke logo ke saath.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-1.5 text-[11px] text-slate-400">
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Insta / FB Size</span>
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Monthly Pack</span>
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Editable Link</span>
+              </div>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-3">
+            <div class="pt-3 border-t border-slate-700 flex items-center justify-between">
+              <span class="text-sm font-bold text-amber-400">From ₹149/-</span>
+              <span class="text-xs font-semibold text-white group-hover:text-amber-300">Click for Preview →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. YouTube Thumbnails & Channel Branding -->
+        <div data-category="digital" data-sample="thumbnail" class="work-card group bg-slate-800/80 border border-slate-700/80 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 hover:-translate-y-1 transition-all duration-300">
+          <div>
+            <div class="relative h-36 w-full overflow-hidden bg-slate-950">
+              <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&w=800&q=80" alt="YouTube Thumbnail Sample" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+              <span class="absolute top-3 left-3 text-[11px] font-bold uppercase tracking-wider bg-indigo-600/90 text-white px-2.5 py-1 rounded">Creator Pack</span>
+              <span class="absolute bottom-2.5 right-3 text-xs font-semibold bg-slate-950/85 text-amber-300 px-2.5 py-1 rounded-md border border-amber-400/30">👁️ View Sample</span>
+            </div>
+            <div class="p-6 pb-3">
+              <h3 class="text-lg font-bold text-white group-hover:text-amber-300 transition">High-CTR YouTube Thumbnails & Banners</h3>
+              <p class="text-sm text-slate-300 mt-2 leading-relaxed">
+                Gaming, vlog, education aur business channels ke liye eye-catching HD thumbnails, channel cover banner aur reels covers.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-1.5 text-[11px] text-slate-400">
+                <span class="bg-slate-900 px-2 py-0.5 rounded">1280×720 HD</span>
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Bold Typography</span>
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Fast Turnaround</span>
+              </div>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-3">
+            <div class="pt-3 border-t border-slate-700 flex items-center justify-between">
+              <span class="text-sm font-bold text-amber-400">From ₹149/-</span>
+              <span class="text-xs font-semibold text-white group-hover:text-amber-300">Click for Preview →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. Restaurant Menu Card & Rate List -->
+        <div data-category="print" data-sample="menu" class="work-card group bg-slate-800/80 border border-slate-700/80 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 hover:-translate-y-1 transition-all duration-300">
+          <div>
+            <div class="relative h-36 w-full overflow-hidden bg-slate-950">
+              <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Restaurant Menu Sample" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+              <span class="absolute top-3 left-3 text-[11px] font-bold uppercase tracking-wider bg-rose-600/90 text-white px-2.5 py-1 rounded">Food & Salon</span>
+              <span class="absolute bottom-2.5 right-3 text-xs font-semibold bg-slate-950/85 text-amber-300 px-2.5 py-1 rounded-md border border-amber-400/30">👁️ View Sample</span>
+            </div>
+            <div class="p-6 pb-3">
+              <h3 class="text-lg font-bold text-white group-hover:text-amber-300 transition">Restaurant Menu Card & Salon Rate List</h3>
+              <p class="text-sm text-slate-300 mt-2 leading-relaxed">
+                Hotels, fast-food corners, cafes aur beauty parlours ke liye attractive table menu card, wall rate chart aur QR scan menu.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-1.5 text-[11px] text-slate-400">
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Table Stand Menu</span>
+                <span class="bg-slate-900 px-2 py-0.5 rounded">WhatsApp PDF</span>
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Food Photos</span>
+              </div>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-3">
+            <div class="pt-3 border-t border-slate-700 flex items-center justify-between">
+              <span class="text-sm font-bold text-amber-400">From ₹349/-</span>
+              <span class="text-xs font-semibold text-white group-hover:text-amber-300">Click for Preview →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11. Certificate, ID Card & Event Pass -->
+        <div data-category="docs events" data-sample="certificate" class="work-card group bg-slate-800/80 border border-slate-700/80 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 hover:-translate-y-1 transition-all duration-300">
+          <div>
+            <div class="relative h-36 w-full overflow-hidden bg-slate-950">
+              <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=800&q=80" alt="Certificate ID Card Sample" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+              <span class="absolute top-3 left-3 text-[11px] font-bold uppercase tracking-wider bg-sky-600/90 text-white px-2.5 py-1 rounded">Institute & Event</span>
+              <span class="absolute bottom-2.5 right-3 text-xs font-semibold bg-slate-950/85 text-amber-300 px-2.5 py-1 rounded-md border border-amber-400/30">👁️ View Sample</span>
+            </div>
+            <div class="p-6 pb-3">
+              <h3 class="text-lg font-bold text-white group-hover:text-amber-300 transition">Certificates, Student ID Cards & Passes</h3>
+              <p class="text-sm text-slate-300 mt-2 leading-relaxed">
+                Computer centers, schools, sports tournaments aur DJ/cultural events ke liye official certificates, staff ID cards aur entry passes.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-1.5 text-[11px] text-slate-400">
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Bulk Name Fill</span>
+                <span class="bg-slate-900 px-2 py-0.5 rounded">PVC Card Size</span>
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Print Ready</span>
+              </div>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-3">
+            <div class="pt-3 border-t border-slate-700 flex items-center justify-between">
+              <span class="text-sm font-bold text-amber-400">From ₹249/-</span>
+              <span class="text-xs font-semibold text-white group-hover:text-amber-300">Click for Preview →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12. Product Sticker, Label & Packaging -->
+        <div data-category="print" data-sample="sticker" class="work-card group bg-slate-800/80 border border-slate-700/80 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-amber-400 hover:-translate-y-1 transition-all duration-300">
+          <div>
+            <div class="relative h-36 w-full overflow-hidden bg-slate-950">
+              <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=800&q=80" alt="Product Packaging Label Sample" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition duration-500" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+              <span class="absolute top-3 left-3 text-[11px] font-bold uppercase tracking-wider bg-rose-600/90 text-white px-2.5 py-1 rounded">Packaging & Label</span>
+              <span class="absolute bottom-2.5 right-3 text-xs font-semibold bg-slate-950/85 text-amber-300 px-2.5 py-1 rounded-md border border-amber-400/30">👁️ View Sample</span>
+            </div>
+            <div class="p-6 pb-3">
+              <h3 class="text-lg font-bold text-white group-hover:text-amber-300 transition">Product Sticker, Jar Label & Box Design</h3>
+              <p class="text-sm text-slate-300 mt-2 leading-relaxed">
+                Sweets boxes, masala/pickle jars, water bottles aur local products ke liye barcode, FSSAI/weight details ke saath sticker labels.
+              </p>
+              <div class="mt-3 flex flex-wrap gap-1.5 text-[11px] text-slate-400">
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Die-Cut Size</span>
+                <span class="bg-slate-900 px-2 py-0.5 rounded">Barcode / QR</span>
+                <span class="bg-slate-900 px-2 py-0.5 rounded">300 DPI PDF</span>
+              </div>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-3">
+            <div class="pt-3 border-t border-slate-700 flex items-center justify-between">
+              <span class="text-sm font-bold text-amber-400">From ₹299/-</span>
+              <span class="text-xs font-semibold text-white group-hover:text-amber-300">Click for Preview →</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE SAMPLE PREVIEW MODAL -->
+  <div id="sampleModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/80 backdrop-blur-sm p-4 overflow-y-auto">
+    <div class="animate-modal bg-white text-slate-900 w-full max-w-3xl rounded-2xl shadow-2xl border border-slate-200 overflow-hidden my-auto">
+      
+      <!-- Modal Top Header -->
+      <div class="bg-slate-900 text-white px-6 py-4 flex items-center justify-between">
+        <div>
+          <span id="modalTag" class="text-[11px] font-bold uppercase tracking-wider text-amber-400">Sample Preview</span>
+          <h3 id="modalTitle" class="text-lg sm:text-xl font-extrabold text-white mt-0.5">Design Title</h3>
+        </div>
+        <button type="button" id="closeModalBtn" aria-label="Close Preview"
+                class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-rose-600 text-white font-bold flex items-center justify-center transition">
+          ✕
+        </button>
+      </div>
+
+      <!-- Modal Body: Visual Sample Showcase + Specs -->
+      <div class="p-6 space-y-6 max-h-[80vh] overflow-y-auto">
+        
+        <!-- Visual Mockup / Photo Comparison Grid -->
+        <div class="grid md:grid-cols-12 gap-5 items-stretch">
+          <!-- Left: Real Sample Photo -->
+          <div class="md:col-span-6 rounded-xl overflow-hidden border border-slate-200 bg-slate-100 flex flex-col">
+            <div class="relative h-52 w-full">
+              <img id="modalImg" src="" alt="Design Sample" class="w-full h-full object-cover" />
+              <span class="absolute top-2.5 left-2.5 bg-slate-950/80 text-white text-[11px] font-semibold px-2.5 py-1 rounded">Sample Style 01</span>
+            </div>
+            <div class="p-3 bg-slate-50 text-xs text-slate-600 border-t border-slate-200">
+              <strong class="text-slate-900">Print / Digital Quality:</strong> <span id="modalQuality">300 DPI High-Resolution</span>
+            </div>
+          </div>
+
+          <!-- Right: Live Studio Layout Mockup Preview -->
+          <div class="md:col-span-6 rounded-xl border border-slate-200 overflow-hidden flex flex-col justify-between bg-slate-50">
+            <div class="px-3.5 py-2 bg-slate-200/70 border-b border-slate-200 flex items-center justify-between">
+              <span class="text-[11px] font-bold uppercase text-slate-700">Live Studio Layout Preview</span>
+              <span class="text-[11px] font-semibold text-emerald-700">Customizable</span>
+            </div>
+            <div id="modalMockupContainer" class="p-4 flex-1 flex items-center justify-center">
+              <!-- Dynamic Mockup injected via JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Sample Details & Included Features -->
+        <div class="bg-slate-50 rounded-xl p-4 sm:p-5 border border-slate-200 space-y-3">
+          <p id="modalDesc" class="text-sm text-slate-700 leading-relaxed"></p>
+          <div id="modalSpecs" class="flex flex-wrap gap-2 pt-1"></div>
+        </div>
+
+        <!-- Bottom Action Bar -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2 border-t border-slate-200">
+          <div>
+            <p class="text-xs text-slate-500 uppercase font-semibold">Starting Price</p>
+            <p id="modalPrice" class="text-2xl font-extrabold text-slate-900">₹299/-</p>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <button type="button" id="closeModalSecondary"
+                    class="px-4 py-3 rounded-lg border border-slate-300 text-slate-700 hover:bg-slate-100 text-sm font-semibold transition">
+              Close
+            </button>
+            <a id="modalWhatsappBtn" href="#" target="_blank"
+               class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-lg shadow transition text-sm flex items-center gap-2">
+              <span>Order Similar Design on WhatsApp →</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Ready-To-Build Systems Showcase -->
+  <section id="portfolio" class="bg-white border-b border-slate-200 py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="max-w-2xl mb-12">
+        <p class="text-indigo-600 font-bold text-xs uppercase tracking-wider">Custom Tech Solutions</p>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-1">Ready-To-Deploy Business Software & Web Apps</h2>
+        <p class="text-slate-600 mt-2 text-sm sm:text-base">Aapke business workflow ke hisaab se hum yeh custom software aur portals turant setup kar sakte hain.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-xl border border-slate-200 bg-slate-50 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold text-indigo-600 uppercase">01 • Restaurant & Cloud Kitchen</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1">Direct WhatsApp Food Ordering System</h3>
+            <p class="text-sm text-slate-600 mt-2">Customers QR scan karke ya link kholkar menu dekhte hain, items cart mein add karte hain, aur order seedha aapke WhatsApp par aata hai.</p>
+          </div>
+          <p class="text-xs font-mono text-slate-500 mt-4 pt-3 border-t border-slate-200">Tech: HTML5, Tailwind CSS, JavaScript, WhatsApp API</p>
+        </div>
+
+        <div class="p-6 rounded-xl border border-slate-200 bg-slate-50 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold text-emerald-600 uppercase">02 • Retail Shop & Wholesale Catalog</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1">Digital Product Showcase & Inquiry Portal</h3>
+            <p class="text-sm text-slate-600 mt-2">Garments, electronics, hardware ya furniture shops ke liye category-wise product gallery jahan customer ek click mein rate puch sakta hai.</p>
+          </div>
+          <p class="text-xs font-mono text-slate-500 mt-4 pt-3 border-t border-slate-200">Tech: Responsive Web UI, Node.js, SEO Architecture</p>
+        </div>
+
+        <div class="p-6 rounded-xl border border-slate-200 bg-slate-50 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold text-amber-600 uppercase">03 • Custom Enterprise & Transport Software</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1">Billing, Inventory & Daily Log Management</h3>
+            <p class="text-sm text-slate-600 mt-2">Transport offices, agencies, aur traders ke liye daily entries, diesel/expense logs, aur automated invoice generation database system.</p>
+          </div>
+          <p class="text-xs font-mono text-slate-500 mt-4 pt-3 border-t border-slate-200">Tech: Python / Java, SQL / MySQL DBMS, Reporting Engine</p>
+        </div>
+
+        <div class="p-6 rounded-xl border border-slate-200 bg-slate-50 flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-bold text-sky-600 uppercase">04 • Clinics, Gyms & Coaching Institutes</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1">Appointment & Student Admission Portal</h3>
+            <p class="text-sm text-slate-600 mt-2">Course details, doctor timings, fee structure, aur online admission/appointment booking form direct WhatsApp notification ke saath.</p>
+          </div>
+          <p class="text-xs font-mono text-slate-500 mt-4 pt-3 border-t border-slate-200">Tech: Custom Frontend, Form Automation, Google Maps</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-20">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <p class="text-indigo-600 font-bold text-xs uppercase tracking-wider">Transparent Pricing</p>
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-1">Web, Software & Combo Packages</h2>
+      <p class="text-slate-600 mt-2 text-sm sm:text-base">One-time charge. Koi hidden monthly fees nahi.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Plan 1 -->
+      <div class="bg-white rounded-2xl border border-slate-200 p-7 flex flex-col justify-between shadow-sm">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Starter Web + Print</span>
+          <h3 class="text-xl font-bold text-slate-900 mt-1">Local Shop Starter Pack</h3>
+          <p class="text-3xl font-extrabold text-slate-900 mt-4">₹4,999 <span class="text-xs font-normal text-slate-500">/ one-time</span></p>
+          <p class="text-xs text-slate-500 mt-1">Best for Shops, Clinics, Salons & Coaching</p>
+          <ul class="mt-6 space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
+            <li>✔ Single-Page Modern Responsive Website</li>
+            <li>✔ Direct WhatsApp & Call Integration</li>
+            <li>✔ Google Maps Location Setup</li>
+            <li>✔ <strong>FREE:</strong> 1 Visiting Card + 1 Shop Poster Design</li>
+            <li>✔ Free SSL Security & Fast Hosting Setup</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/918409884046?text=Hi%20Sahil%2C%20mujhe%20Starter%20Plan%20(%E2%82%B94%2C999)%20mein%20website%20banwani%20hai." target="_blank"
+           class="mt-8 block text-center bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3 rounded-lg transition">
+          Select Starter Plan
+        </a>
+      </div>
+
+      <!-- Plan 2 (Popular) -->
+      <div class="bg-slate-900 text-white rounded-2xl border-2 border-indigo-500 p-7 flex flex-col justify-between shadow-xl relative">
+        <span class="absolute -top-3 right-6 bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full">Most Popular</span>
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-indigo-400">Growth Business Pack</span>
+          <h3 class="text-xl font-bold text-white mt-1">Multi-Page Site + Branding</h3>
+          <p class="text-3xl font-extrabold text-white mt-4">₹11,999 <span class="text-xs font-normal text-slate-400">/ one-time</span></p>
+          <p class="text-xs text-slate-400 mt-1">Best for Restaurants, Showrooms & Wholesale</p>
+          <ul class="mt-6 space-y-3 text-sm text-slate-300 border-t border-slate-800 pt-5">
+            <li>✔ Up to 6 Custom Pages + Product Catalog</li>
+            <li>✔ Direct WhatsApp Order Cart System</li>
+            <li>✔ <strong>FREE:</strong> Logo + Flex Banner + Pamphlet Design</li>
+            <li>✔ On-Page Google SEO Optimization</li>
+            <li>✔ 1 Month Free Technical Support</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/918409884046?text=Hi%20Sahil%2C%20mujhe%20Growth%20Plan%20(%E2%82%B911%2C999)%20ke%20baare%20mein%20baat%20karni%20hai." target="_blank"
+           class="mt-8 block text-center bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 rounded-lg transition">
+          Select Growth Plan
+        </a>
+      </div>
+
+      <!-- Plan 3 -->
+      <div class="bg-white rounded-2xl border border-slate-200 p-7 flex flex-col justify-between shadow-sm">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Enterprise & Software</span>
+          <h3 class="text-xl font-bold text-slate-900 mt-1">Custom Software & Web App</h3>
+          <p class="text-3xl font-extrabold text-slate-900 mt-4">₹19,999+ <span class="text-xs font-normal text-slate-500">/ custom</span></p>
+          <p class="text-xs text-slate-500 mt-1">Best for Billing, Inventory & Transport Agencies</p>
+          <ul class="mt-6 space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-5">
+            <li>✔ Custom Billing, Stock & Khata Software</li>
+            <li>✔ Python / Java / Node.js + SQL Database</li>
+            <li>✔ Admin & Staff Role-Based Login</li>
+            <li>✔ Custom GST Invoice & Excel/PDF Export</li>
+            <li>✔ Dedicated Priority Maintenance</li>
+          </ul>
+        </div>
+        <a href="https://wa.me/918409884046?text=Hi%20Sahil%2C%20mujhe%20Custom%20Software%20%2F%20Database%20System%20banwana%20hai." target="_blank"
+           class="mt-8 block text-center bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3 rounded-lg transition">
+          Discuss Software Scope
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Direct WhatsApp Inquiry Form & Clickable Google Map -->
+  <section id="contact" class="bg-white border-t border-slate-200 py-16 md:py-20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 grid md:grid-cols-12 gap-10 items-start">
+      
+      <!-- Left Info + Direct Clickable Google Map -->
+      <div class="md:col-span-5 space-y-4">
+        <p class="text-indigo-600 font-bold text-xs uppercase tracking-wider">Direct Inquiry</p>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Apna Project Ya Design Order Karein</h2>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Apni details bharein aur Submit par click karein — aapka message seedha mere WhatsApp par khul jayega.
+        </p>
+
+        <div class="pt-4 space-y-2.5 text-sm text-slate-700 border-t border-slate-100">
+          <p><strong>Founder & Designer:</strong> Sahil Kumar</p>
+          <p><strong>Phone / WhatsApp:</strong> +91 84098 84046 / +91 91221 08991</p>
+          <p><strong>Email:</strong> sahilcoomar7@gmail.com / karandhanbad321@gmail.com</p>
+          <p>
+            <strong>Location:</strong>
+            <a href="https://www.google.com/maps/search/?api=1&query=Shahid+Chowk+Chirkunda+Dhanbad+Jharkhand+828202" target="_blank" rel="noopener noreferrer"
+               class="text-indigo-600 hover:underline font-medium">
+              Shahid Chowk, Chirkunda, Dhanbad, Jharkhand - 828202 ↗
+            </a>
+          </p>
+        </div>
+
+        <!-- Direct Clickable Google Map Card -->
+        <div class="pt-2">
+          <a href="https://www.google.com/maps/search/?api=1&query=Shahid+Chowk+Chirkunda+Dhanbad+Jharkhand+828202" target="_blank" rel="noopener noreferrer"
+             title="Click to open in Google Maps"
+             class="group block relative rounded-xl overflow-hidden border border-slate-300 shadow-sm hover:border-indigo-500 transition">
+            <iframe
+              src="https://maps.google.com/maps?q=Shahid%20Chowk%20Chirkunda%20Dhanbad%20Jharkhand%20828202&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              class="w-full h-44 pointer-events-none"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="bg-slate-900 text-white text-xs font-semibold px-4 py-2.5 flex items-center justify-between group-hover:bg-indigo-600 transition">
+              <span>📍 Shahid Chowk, Chirkunda (828202)</span>
+              <span>Open in Google Maps →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Form: Name, Contact, Service, Address -->
+      <div class="md:col-span-7 bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+        <form id="whatsappForm" class="space-y-4">
+          <div>
+            <label for="clientName" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">Name *</label>
+            <input type="text" id="clientName" required placeholder="Apna pura naam likhein"
+                   class="w-full px-4 py-3 rounded-lg border border-slate-300 bg-white text-sm focus:outline-none focus:border-indigo-600" />
+          </div>
+
+          <div>
+            <label for="clientContact" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">Contact Number *</label>
+            <input type="tel" id="clientContact" required placeholder="e.g. +91 98765 43210"
+                   class="w-full px-4 py-3 rounded-lg border border-slate-300 bg-white text-sm focus:outline-none focus:border-indigo-600" />
+          </div>
+
+          <div>
+            <label for="clientService" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">Select Work / Service *</label>
+            <select id="clientService"
+                    class="w-full px-4 py-3 rounded-lg border border-slate-300 bg-white text-sm focus:outline-none focus:border-indigo-600">
+              <option value="Business Website (₹4,999+)">Business Website (₹4,999+)</option>
+              <option value="E-Commerce / Restaurant Site">E-Commerce / Restaurant Site</option>
+              <option value="Custom Billing / SQL Software">Custom Billing / SQL Software</option>
+              <option value="Flex Banner / Hoarding / Standee">Flex Banner / Hoarding / Standee</option>
+              <option value="Pamphlet / Handbill / Brochure">Pamphlet / Handbill / Brochure</option>
+              <option value="Shadi Ka Card (PDF / Print)">Shadi Ka Card (PDF / Print)</option>
+              <option value="Video Invitation (Shadi / Birthday)">Video Invitation (Shadi / Birthday)</option>
+              <option value="Professional Resume / CV / Biodata">Professional Resume / CV / Biodata</option>
+              <option value="Visiting Card / Bill Book / Letterhead">Visiting Card / Bill Book / Letterhead</option>
+              <option value="Logo Design / Brand Kit">Logo Design / Brand Kit</option>
+              <option value="Canva Social Media / Festival Posters">Canva Social Media / Festival Posters</option>
+              <option value="YouTube Thumbnail / Channel Banner">YouTube Thumbnail / Channel Banner</option>
+              <option value="Menu Card / Certificate / Sticker Label">Menu Card / Certificate / Sticker Label</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="clientAddress" class="block text-xs font-bold uppercase text-slate-700 mb-1.5">Address / Work Details *</label>
+            <textarea id="clientAddress" rows="3" required placeholder="Apni shop/city ka address aur size/details likhein"
+                      class="w-full px-4 py-3 rounded-lg border border-slate-300 bg-white text-sm focus:outline-none focus:border-indigo-600"></textarea>
+          </div>
+
+          <button type="submit"
+                  class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 rounded-lg shadow transition">
+            Submit & Open WhatsApp →
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/918409884046?text=Hi%20Sahil%2C%20mujhe%20Website%2C%20Software%20ya%20Design%20work%20ke%20baare%20mein%20baat%20karni%20hai." target="_blank"
+     aria-label="Chat on WhatsApp"
+     class="fixed bottom-5 right-5 z-40 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-4 py-3 rounded-full shadow-lg flex items-center gap-2 text-sm transition">
+    <span>💬 WhatsApp</span>
+  </a>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-8 text-xs">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© 2026 SahilTech Studio • Sahil Kumar • Shahid Chowk, Chirkunda, Dhanbad, Jharkhand - 828202</p>
+      <div class="flex flex-wrap gap-5">
+        <a href="https://www.google.com/maps/search/?api=1&query=Shahid+Chowk+Chirkunda+Dhanbad+Jharkhand+828202" target="_blank" rel="noopener noreferrer" class="hover:text-white">Google Maps</a>
+        <a href="https://wa.me/918409884046" target="_blank" class="hover:text-white">WhatsApp</a>
+        <a href="mailto:sahilcoomar7@gmail.com" class="hover:text-white">sahilcoomar7@gmail.com</a>
+        <a href="https://github.com/sahilcoomar" target="_blank" class="hover:text-white">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: Interactive Sample Modal + Category Filter + Custom Cursor + WhatsApp -->
+  <script>
+    // Sample Data for All 12 Design & Print Cards
+    const sampleData = {
+      flex: {
+        tag: "Print & Outdoor Banner Sample",
+        title: "Flex Banner, Shop Board & Hoarding Design",
+        img: "https://images.unsplash.com/photo-1606388062057-68d065c89d65?auto=format&fit=crop&w=900&q=85",
+        quality: "300 DPI CMYK Print-Ready PDF + JPG (Any Feet Size)",
+        price: "From ₹399/-",
+        desc: "Dukaan ke front board (e.g., 10×3 ft, 8×4 ft), coaching institute, showroom inauguration aur stage backdrop ke liye bold fonts aur high-contrast colors mein flex banner design.",
+        specs: ["Custom Feet/Inch Size", "CMYK Print-Ready File", "Hindi & English Fonts", "Same-Day Delivery"],
+        whatsappText: "Hi Sahil, maine aapka Flex Banner sample dekha. Mujhe Flex Banner / Shop Board design karwana hai.",
+        mockup: `
+          <div class="w-full rounded-lg overflow-hidden shadow-md border-2 border-amber-400 bg-gradient-to-r from-red-700 via-red-600 to-amber-600 text-white p-4 text-center space-y-1.5">
+            <span class="inline-block bg-amber-300 text-slate-950 text-[10px] font-extrabold px-2 py-0.5 rounded uppercase">Grand Opening / Special Offer</span>
+            <h4 class="text-lg font-extrabold tracking-wide uppercase drop-shadow">NEW ROYAL ELECTRONICS & MOBILES</h4>
+            <p class="text-[11px] text-amber-100">LED TV • Smartphones • Fridge • Washing Machine • Easy EMI Available</p>
+            <div class="pt-1.5 mt-1.5 border-t border-white/25 text-[10px] font-semibold flex justify-between">
+              <span>📍 Main Road, Chirkunda</span>
+              <span>📞 +91 98765 XXXXX</span>
+            </div>
+          </div>`
+      },
+      pamphlet: {
+        tag: "Marketing & Handbill Sample",
+        title: "Pamphlet, Handbill & Tri-Fold Brochure",
+        img: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=900&q=85",
+        quality: "A4 / A5 / 1/8 Size Print-Ready PDF + WhatsApp Sharing Image",
+        price: "From ₹299/-",
+        desc: "Coaching admission, festive sale, clinic camp aur naye business promotion ke liye clean layout, offer highlights aur clear contact details ke saath pamphlet design.",
+        specs: ["A4 / A5 / Handbill Size", "Single & Double Sided", "QR Code & Map Pin", "Hindi / English"],
+        whatsappText: "Hi Sahil, maine aapka Pamphlet sample dekha. Mujhe Pamphlet / Handbill design karwana hai.",
+        mockup: `
+          <div class="w-full max-w-[240px] rounded-lg shadow-md border border-indigo-200 bg-white overflow-hidden text-left">
+            <div class="bg-indigo-700 text-white p-3 text-center">
+              <p class="text-[10px] uppercase tracking-wider text-amber-300 font-bold">Admissions Open 2026-27</p>
+              <h4 class="text-sm font-extrabold mt-0.5">BRIGHT FUTURE ACADEMY</h4>
+            </div>
+            <div class="p-3 space-y-1.5 text-[11px] text-slate-700">
+              <p class="font-bold text-indigo-700">✔ Class 8th to 12th (CBSE / JAC)</p>
+              <p class="font-bold text-indigo-700">✔ Computer & Spoken English</p>
+              <p class="bg-amber-100 text-amber-900 font-bold px-2 py-1 rounded text-center text-[10px]">🎉 50% OFF on Registration Fee!</p>
+              <p class="text-[10px] text-slate-500 pt-1 text-center">📍 Shahid Chowk, Chirkunda</p>
+            </div>
+          </div>`
+      },
+      shadi: {
+        tag: "Royal Wedding & Event Card Sample",
+        title: "Shadi Ka Card (WhatsApp PDF + Printing Press)",
+        img: "https://images.unsplash.com/photo-1512090967618-c9d67f852cec?auto=format&fit=crop&w=900&q=85",
+        quality: "Multi-Page Interactive PDF (Clickable Map Link) + Press Layout",
+        price: "From ₹249/-",
+        desc: "Shubh Vivah, Tilak, Haldi, Mehndi aur Reception ke liye royal floral & golden theme digital WhatsApp card jisme Google Map location link bhi clickable rehta hai.",
+        specs: ["Clickable Map Button", "Multi-Page PDF", "Hindi & English", "Same-Day Delivery"],
+        whatsappText: "Hi Sahil, maine aapka Shadi Ka Card sample dekha. Mujhe Shadi Card design karwana hai.",
+        mockup: `
+          <div class="w-full max-w-[240px] rounded-xl shadow-md border-2 border-amber-500 bg-gradient-to-b from-rose-950 via-red-900 to-rose-950 text-amber-100 p-4 text-center space-y-1.5">
+            <p class="text-[10px] tracking-widest text-amber-300">॥ श्री गणेशाय नमः ॥</p>
+            <p class="text-[10px] uppercase tracking-wider text-rose-200">Shubh Vivah Invitation</p>
+            <h4 class="font-serif-display text-lg font-bold text-amber-300 pt-1">Rahul & Priya</h4>
+            <p class="text-[10px] text-rose-100">Sunday, 14th December 2026</p>
+            <div class="pt-2">
+              <span class="inline-block bg-amber-400 text-rose-950 text-[10px] font-bold px-3 py-1 rounded-full">📍 Venue Location Map</span>
+            </div>
+          </div>`
+      },
+      video: {
+        tag: "Animated Video Invitation Sample",
+        title: "HD Video Invite (Shadi, Birthday & Anniversary)",
+        img: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=85",
+        quality: "1080p Full HD MP4 Video (WhatsApp & Instagram Ready)",
+        price: "From ₹499/-",
+        desc: "Apni pasand ke background song, couple photos aur animated text effects ke saath WhatsApp par bhejne ke liye premium video invitation.",
+        specs: ["1080p Full HD MP4", "Custom Song / Music", "Photo Slideshow", "24-Hour Delivery"],
+        whatsappText: "Hi Sahil, maine aapka Video Invitation sample dekha. Mujhe Video Card banwana hai.",
+        mockup: `
+          <div class="w-full max-w-[240px] rounded-xl shadow-md border border-purple-300 bg-slate-900 text-white p-4 text-center space-y-2 relative overflow-hidden">
+            <div class="w-10 h-10 mx-auto rounded-full bg-amber-400 text-slate-950 flex items-center justify-center font-extrabold text-sm shadow-lg">▶</div>
+            <p class="text-[10px] uppercase tracking-widest text-purple-300">Save The Date • Video Invite</p>
+            <h4 class="font-serif-display text-base font-bold text-amber-300">Sagar & Aarti</h4>
+            <p class="text-[10px] text-slate-300">🎵 With Royal Wedding Background Music</p>
+          </div>`
+      },
+      resume: {
+        tag: "ATS Career Resume & Biodata Sample",
+        title: "Modern Job Resume / CV & Marriage Biodata",
+        img: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=900&q=85",
+        quality: "Clean Vector PDF + Free Minor Corrections",
+        price: "From ₹149/-",
+        desc: "Private jobs, banking, IT, accounting aur freshers ke liye clean corporate Resume/CV — aur shaadi rishte ke liye traditional photo biodata.",
+        specs: ["ATS-Friendly Format", "1-Page & 2-Page CV", "Marriage Biodata", "Same-Day PDF"],
+        whatsappText: "Hi Sahil, maine aapka Resume / Biodata sample dekha. Mujhe apna Resume / Biodata banwana hai.",
+        mockup: `
+          <div class="w-full max-w-[240px] rounded-lg shadow-md border border-slate-300 bg-white overflow-hidden text-left">
+            <div class="bg-slate-900 text-white p-3">
+              <h4 class="text-xs font-extrabold tracking-wide">SAHIL KUMAR</h4>
+              <p class="text-[10px] text-indigo-300">BCA Graduate • Web & Accounts Executive</p>
+            </div>
+            <div class="p-3 space-y-1.5 text-[10px] text-slate-600">
+              <p><strong class="text-slate-900">Skills:</strong> MS Excel, TallyPrime, HTML/CSS, SQL</p>
+              <p><strong class="text-slate-900">Education:</strong> Bachelor of Computer Applications</p>
+              <p><strong class="text-slate-900">Location:</strong> Dhanbad, Jharkhand</p>
+            </div>
+          </div>`
+      },
+      visiting: {
+        tag: "Business Stationery Sample",
+        title: "VIP Visiting Card, Bill Book & Letterhead",
+        img: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=900&q=85",
+        quality: "3.5×2 Inch Print-Ready Front & Back + Digital Tap Card",
+        price: "From ₹199/-",
+        desc: "Matte/Glossy printing ke liye double-sided visiting cards (WhatsApp & Location QR code ke saath), GST bill book format aur company letterhead.",
+        specs: ["Front + Back Design", "WhatsApp / Map QR", "GST Bill Book Layout", "Print-Ready PDF"],
+        whatsappText: "Hi Sahil, maine aapka Visiting Card / Bill Book sample dekha. Mujhe design karwana hai.",
+        mockup: `
+          <div class="w-full max-w-[250px] rounded-xl shadow-lg bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-950 text-white p-4 border border-amber-400/50 text-left space-y-2">
+            <div class="flex justify-between items-start">
+              <div>
+                <h4 class="text-xs font-extrabold text-amber-400">SHARMA TRADERS & CO.</h4>
+                <p class="text-[10px] text-slate-300">Wholesale & Hardware Suppliers</p>
+              </div>
+              <span class="bg-white text-slate-950 text-[9px] font-bold px-1.5 py-0.5 rounded">QR</span>
+            </div>
+            <div class="pt-2 border-t border-slate-700 text-[10px] text-slate-300 space-y-0.5">
+              <p>📞 +91 98765 43210</p>
+              <p>📍 Chirkunda, Dhanbad - 828202</p>
+            </div>
+          </div>`
+      },
+      logo: {
+        tag: "Brand Identity & Logo Sample",
+        title: "Custom Logo Design & Brand Kit",
+        img: "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=900&q=85",
+        quality: "High-Res Transparent PNG + Dark/Light Background Files",
+        price: "From ₹399/-",
+        desc: "Aapki shop, agency, startup ya YouTube channel ke liye clean modern logo jo visiting card, flex banner aur WhatsApp DP sab par sharp dikhe.",
+        specs: ["Transparent PNG", "3D Wall Mockup", "2 Concept Options", "Unlimited Color Tweaks"],
+        whatsappText: "Hi Sahil, maine aapka Logo sample dekha. Mujhe apne brand ke liye Logo banwana hai.",
+        mockup: `
+          <div class="w-full max-w-[230px] rounded-xl shadow-md bg-slate-950 text-white p-5 text-center border border-indigo-500/40 space-y-2">
+            <div class="w-12 h-12 mx-auto rounded-xl bg-gradient-to-tr from-indigo-600 to-emerald-500 flex items-center justify-center font-mono font-extrabold text-lg shadow-lg">&lt;/&gt;</div>
+            <h4 class="text-base font-extrabold tracking-tight">SahilTech <span class="text-emerald-400">Studio</span></h4>
+            <p class="text-[10px] text-slate-400 uppercase tracking-widest">Web • Software • Design</p>
+          </div>`
+      },
+      social: {
+        tag: "Canva Social Media & Festival Poster Sample",
+        title: "Instagram, Facebook & Festival Greeting Posters",
+        img: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=900&q=85",
+        quality: "1080×1080 Square & 1080×1920 WhatsApp Status HD",
+        price: "From ₹149/-",
+        desc: "Apne customers ko WhatsApp aur Instagram par engage rakhne ke liye offer posters, product launch ads aur festival wishes aapke shop logo & number ke saath.",
+        specs: ["Insta & Status Size", "Shop Logo & Number", "Monthly Combo Pack", "Same-Day Delivery"],
+        whatsappText: "Hi Sahil, maine aapka Social Media / Festival Poster sample dekha. Mujhe posters banwane hain.",
+        mockup: `
+          <div class="w-full max-w-[220px] rounded-xl shadow-md bg-gradient-to-br from-amber-500 via-orange-600 to-rose-600 text-white p-4 text-center space-y-2">
+            <span class="bg-white/20 text-[10px] font-bold px-2 py-0.5 rounded-full">✨ FESTIVE MEGA SALE</span>
+            <h4 class="text-base font-extrabold leading-tight">FLAT 30% OFF ON ALL ITEMS</h4>
+            <p class="text-[10px] text-amber-100">Offer Valid Till This Sunday!</p>
+            <div class="bg-slate-950/80 text-[10px] py-1 px-2 rounded font-semibold">Your Shop Name • 84098XXXXX</div>
+          </div>`
+      },
+      thumbnail: {
+        tag: "YouTube & Creator Branding Sample",
+        title: "High-CTR YouTube Thumbnails & Channel Art",
+        img: "https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&w=900&q=85",
+        quality: "1280×720 Full HD PNG (Under 2MB YouTube Ready)",
+        price: "From ₹149/-",
+        desc: "Gaming, vlogs, tech, news aur educational videos ke liye attractive face-cutout, glowing text aur high-contrast YouTube thumbnails.",
+        specs: ["1280×720 HD Resolution", "Face Cutout & Glow", "Channel Banner", "Fast Turnaround"],
+        whatsappText: "Hi Sahil, maine aapka YouTube Thumbnail sample dekha. Mujhe Thumbnails / Banner banwana hai.",
+        mockup: `
+          <div class="w-full max-w-[250px] rounded-xl shadow-md bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 text-white p-4 border-2 border-amber-400 text-left space-y-1.5">
+            <span class="bg-red-600 text-white text-[9px] font-extrabold px-2 py-0.5 rounded uppercase">LIVE STREAM / NEW VIDEO</span>
+            <h4 class="text-base font-extrabold text-amber-300 leading-tight uppercase">120 FPS PRO SETTINGS UNLOCKED! 🔥</h4>
+            <p class="text-[10px] text-slate-300">Full Gameplay & Sensitivity Guide</p>
+          </div>`
+      },
+      menu: {
+        tag: "Restaurant & Salon Menu Sample",
+        title: "Restaurant Menu Card & Parlour Rate List",
+        img: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=85",
+        quality: "Table Menu Print PDF + QR Code Digital Menu",
+        price: "From ₹349/-",
+        desc: "Restaurants, fast-food stalls, cafes aur beauty parlours ke liye categorized rate card jise aap table par rakh sakte hain aur WhatsApp par bhej sakte hain.",
+        specs: ["Print + WhatsApp PDF", "Food / Service Photos", "QR Scan Link", "Easy Price Update"],
+        whatsappText: "Hi Sahil, maine aapka Menu Card / Rate List sample dekha. Mujhe Menu design karwana hai.",
+        mockup: `
+          <div class="w-full max-w-[230px] rounded-xl shadow-md bg-slate-900 text-white p-3.5 border border-amber-500/40 text-left space-y-2">
+            <div class="text-center border-b border-slate-700 pb-1.5">
+              <h4 class="text-xs font-extrabold text-amber-400 uppercase tracking-wider">SPICE GARDEN MENU</h4>
+            </div>
+            <div class="space-y-1 text-[10px]">
+              <div class="flex justify-between"><span>Paneer Chilli Dry</span><span class="text-amber-300 font-bold">₹140</span></div>
+              <div class="flex justify-between"><span>Chicken Biryani (Full)</span><span class="text-amber-300 font-bold">₹180</span></div>
+              <div class="flex justify-between"><span>Veg Hakka Noodles</span><span class="text-amber-300 font-bold">₹90</span></div>
+            </div>
+          </div>`
+      },
+      certificate: {
+        tag: "Institute & Event Stationery Sample",
+        title: "Certificates, Student ID Cards & Event Passes",
+        img: "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=900&q=85",
+        quality: "A4 Landscape Certificate + CR80 PVC ID Card Size",
+        price: "From ₹249/-",
+        desc: "Computer training institutes, schools, sports tournaments aur DJ nights ke liye official border certificates, student/staff ID cards aur VIP passes.",
+        specs: ["A4 Certificate Layout", "PVC ID Card Size", "Bulk Name Entry", "Print-Ready PDF"],
+        whatsappText: "Hi Sahil, maine aapka Certificate / ID Card sample dekha. Mujhe design karwana hai.",
+        mockup: `
+          <div class="w-full max-w-[240px] rounded-lg shadow-md bg-amber-50 text-slate-900 p-3.5 border-4 border-double border-amber-600 text-center space-y-1">
+            <p class="text-[9px] font-bold uppercase tracking-widest text-amber-700">Certificate of Achievement</p>
+            <h4 class="font-serif-display text-sm font-bold text-slate-900">Awarded to Rohit Sharma</h4>
+            <p class="text-[10px] text-slate-600">For successfully completing Diploma in Computer Applications (DCA)</p>
+          </div>`
+      },
+      sticker: {
+        tag: "Product Packaging & Label Sample",
+        title: "Product Sticker, Jar Label & Box Packaging",
+        img: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=900&q=85",
+        quality: "300 DPI Die-Cut Print PDF (Round, Square & Roll Labels)",
+        price: "From ₹299/-",
+        desc: "Mithai boxes, achar/masala jars, bakery items, water bottles aur local products ke liye weight, ingredients, FSSAI aur barcode ke saath attractive labels.",
+        specs: ["Custom Label Size", "Barcode / QR Ready", "Glossy / Matte Print", "300 DPI CMYK"],
+        whatsappText: "Hi Sahil, maine aapka Product Sticker / Label sample dekha. Mujhe label design karwana hai.",
+        mockup: `
+          <div class="w-full max-w-[220px] rounded-full shadow-md bg-gradient-to-b from-emerald-800 to-emerald-950 text-white p-4 text-center border-2 border-amber-400 space-y-1">
+            <span class="text-[9px] uppercase tracking-widest text-amber-300 font-bold">100% Pure & Homemade</span>
+            <h4 class="text-sm font-extrabold">SHUDDH DESI GHEE</h4>
+            <p class="text-[10px] text-emerald-200">Net Wt: 500g • FSSAI Certified</p>
+          </div>`
+      }
+    };
+
+    // Modal Open / Close Logic
+    const sampleModal = document.getElementById('sampleModal');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const closeModalSecondary = document.getElementById('closeModalSecondary');
+
+    function openSampleModal(key) {
+      const data = sampleData[key];
+      if (!data) return;
+
+      document.getElementById('modalTag').textContent = data.tag;
+      document.getElementById('modalTitle').textContent = data.title;
+      document.getElementById('modalImg').src = data.img;
+      document.getElementById('modalQuality').textContent = data.quality;
+      document.getElementById('modalDesc').textContent = data.desc;
+      document.getElementById('modalPrice').textContent = data.price;
+      document.getElementById('modalMockupContainer').innerHTML = data.mockup;
+
+      const specsContainer = document.getElementById('modalSpecs');
+      specsContainer.innerHTML = data.specs
+        .map(s => `<span class="bg-white border border-slate-200 text-slate-700 text-xs font-medium px-2.5 py-1 rounded-md">✔ ${s}</span>`)
+        .join('');
+
+      document.getElementById('modalWhatsappBtn').href =
+        `https://wa.me/918409884046?text=${encodeURIComponent(data.whatsappText)}`;
+
+      sampleModal.classList.remove('hidden');
+      sampleModal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeSampleModal() {
+      sampleModal.classList.add('hidden');
+      sampleModal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.work-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const sampleKey = card.getAttribute('data-sample');
+        openSampleModal(sampleKey);
+      });
+    });
+
+    closeModalBtn.addEventListener('click', closeSampleModal);
+    closeModalSecondary.addEventListener('click', closeSampleModal);
+    sampleModal.addEventListener('click', (e) => {
+      if (e.target === sampleModal) closeSampleModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !sampleModal.classList.contains('hidden')) {
+        closeSampleModal();
+      }
+    });
+
+    // Design & Print Work Category Filter
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const workCards = document.querySelectorAll('.work-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => {
+          b.classList.remove('bg-indigo-600', 'text-white');
+          b.classList.add('bg-slate-800', 'text-slate-300');
+        });
+        btn.classList.remove('bg-slate-800', 'text-slate-300');
+        btn.classList.add('bg-indigo-600', 'text-white');
+
+        const filter = btn.getAttribute('data-filter');
+        workCards.forEach(card => {
+          const categories = card.getAttribute('data-category');
+          if (filter === 'all' || categories.includes(filter)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Custom Smooth Cursor Logic
+    const dot = document.getElementById('cursorDot');
+    const ring = document.getElementById('cursorRing');
+    let mouseX = 0, mouseY = 0;
+    let ringX = 0, ringY = 0;
+
+    if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        dot.style.left = mouseX + 'px';
+        dot.style.top = mouseY + 'px';
+      });
+
+      function animateRing() {
+        ringX += (mouseX - ringX) * 0.18;
+        ringY += (mouseY - ringY) * 0.18;
+        ring.style.left = ringX + 'px';
+        ring.style.top = ringY + 'px';
+        requestAnimationFrame(animateRing);
+      }
+      animateRing();
+
+      const interactiveEls = document.querySelectorAll('a, button, input, textarea, select, .work-card');
+      interactiveEls.forEach((el) => {
+        el.addEventListener('mouseenter', () => {
+          dot.classList.add('cursor-hover');
+          ring.classList.add('cursor-hover');
+        });
+        el.addEventListener('mouseleave', () => {
+          dot.classList.remove('cursor-hover');
+          ring.classList.remove('cursor-hover');
+        });
+      });
+    }
+
+    // Direct WhatsApp Redirect Form
+    document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('clientName').value.trim();
+      const contact = document.getElementById('clientContact').value.trim();
+      const service = document.getElementById('clientService').value;
+      const address = document.getElementById('clientAddress').value.trim();
+
+      const text = `Hi Sahil, mujhe *${service}* ke liye inquiry karni hai:\n\n` +
+                   `*Name:* ${name}\n` +
+                   `*Contact:* ${contact}\n` +
+                   `*Address / Details:* ${address}`;
+
+      const whatsappURL = `https://wa.me/918409884046?text=${encodeURIComponent(text)}`;
+      window.location.href = whatsappURL;
+    });
+  </script>
+
+</body>
+</html>
